@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wheather</title>
+    <link rel="stylesheet" href="css/all.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body >
+       
+    
+<!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-nan ">
+      <div class="container">
+        <div class="nav-logo d-flex justify-content-center align-items-center ">
+          <img src="images/weather1.png"  alt="">
+         <div class="nav-cap ms-2 ">
+          <a class="navbar-brand text-white" href="index.html">Weather</a>
+          <p class="lead text-white ">tagline goes here</p>
+         </div>
+        </div>
+       
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0  ">
+            <li class="nav-item">
+          
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+        
+            </li>
+     
+            <li class="nav-item ">
+              
+             
+                <a class="nav-link  " href="#News">News</a>
+        
+              
+            </li>
+            <li class="nav-item">
+              
+                <a class="nav-link " href="#Live cameras">Live cameras</a>
+              
+            </li>
+            <li class="nav-item">
+              
+                <a class="nav-link" href="#Photo">Photo</a>
+              
+            </li>
+            <li class="nav-item">
+             
+              <a class="nav-link" href="#Contact">Contact</a>
+             
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+      
+
+<!-- Home -->
+    <div class="home py-5">
+       <div class="form  my-4">
+        <div class="form-floating mb-3  w-75 m-auto inputt ">
+          <input  id="inputSearch"  type="text" class="form-control" id="Search" placeholder="Find Your Location">
+          <label for="Search">Find Your Location</label>
+          <p id="eror" class="alert alert-danger my-3 d-none">This City Is not Founded</p>
+        </div>
+        <button id="BtnSearch" class="btn btn-primary">Find</button>
+       </div>
+       <div class="status py-4">
+        <div class="container">
+          <div id="rowData" class="row">
+            <div class="col-md-4 ">
+              <div class="weather">
+                <div class="card  ">
+                  <div class="card-footer d-flex justify-content-between align-items-center">
+                    <p id="dayCurrent"></p>
+                    <div class="month d-flex justify-content-between">
+                      <p id="dateCurrent"></p>
+                    <span  id="DaysCurrent"></span>
+                    </div>
+                  </div>
+                  <div class="card-body p-5 ">
+                   <span id="CityCurrent"></span>
+                   <h1 id="GradgeCurrent"></h1>
+                   <img id="ImageCurrent" src="images/weather7.png" alt="">
+                   <p id="TextCurrent"></p>
+                   <div class="w-1 d-flex justify-content-between align-items-center">
+                    <div class="im-1 d-flex justify-content-center align-items-center">
+                      <img width="20px" src="images/weather4.png" alt="">
+                      <span id="PrecntageCurrent">%</span>
+                    </div>
+                    <div class="im-2 d-flex justify-content-center align-items-center">
+                      <img width="20px" src="images/weather5.png" alt="">
+                      <span id="SpeedCurrent"></span>
+                    </div>
+                    <div class="im-2 d-flex justify-content-center align-items-center">
+                      <img width="20px" src="images/weather6.png" alt="">
+                      <span id="SpreedCurrent" class="py-1"></span>
+                    </div>
+                   </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <div class="col-md-4 ">
+              <div class="weather  ">
+                <div class="card ">
+                  <div class="card-footer d-flex justify-content-center ">
+                    <p class="NextDay"></p>
+                  </div>
+                  <div class="card-body diffrence p-4 text-center">
+                    <img  class="py-3 NextImg" src="images/weather7.png" alt="">
+                    <h4 class="py-3 NextGradge_1"></h4>
+                    <h4 class="py-3 NextGradge_2"></h4>
+                   <span class="space NextStatues"></span>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <div class="col-md-4 ">
+              <div class="weather ">
+                <div class="card">
+                  <div class="card-footer d-flex justify-content-center ">
+                    <p class="NextDay"></p>
+                    
+                  </div>
+                  <div class="card-body p-4 text-center">
+                    <img class="py-3 NextImg" src="images/weather7.png" alt="">
+                    <h4 class="py-3 NextGradge_1"></h4>
+                    <h4 class="py-3 NextGradge_2"></h4>
+                   <span class="space NextStatues" ></span>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+    
+          </div>
+       </div>
+      </div>
+    </div>
+
+
+<!-- Fooater -->
+    <div class="foatear p-4">
+      <div class="container">
+        <div class="subs py-4 d-flex justify-content-between align-items-center ">
+
+          <div class="mo w-100 ">
+            <div class="form-floating mb-3   ">
+              <input  type="email" class="form-control" id="Search" placeholder="">
+              <label for="Search">Enter Your Email to Subscribe</label>
+            </div>
+            <button id="Subscribe" class="btn btn-info">Subscribe</button>
+          </div>
+
+          <div class="icon">
+            <span>
+              <i class="fa-brands fa-facebook"></i>
+            </span>
+            <span>
+              <i class="fa-brands fa-twitter"></i>
+            </span>
+            <span>
+              <i class="fa-brands fa-instagram"></i>
+            </span>
+            <span>
+              <i class="fa-brands fa-pinterest"></i>
+            </span>
+          </div>
+       
+       
+        </div>
+        <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+      </div>
+    </div>
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
+
+<!-- 
+
+-->

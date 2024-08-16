@@ -1,0 +1,158 @@
+.bg-nan{
+    background-color: #1E202B;
+    padding: 30px 10px;
+}
+.nav-logo img{
+    width: 70px;
+   
+}
+.nav-cap p{
+    font-size: 10px;
+}
+.nav-cap a{
+    font-size: 15px;
+    font-weight: 500;
+}
+.navbar .nav-item .nav-link:not(.active){
+    padding: 0 25px;
+    color: #fff;
+    font-weight: 400;
+    -webkit-transition: 0.3s ease;
+    transition:all .5s;
+    margin: 0 10px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+}
+
+
+.navbar .nav-item .nav-link:not(.active):hover{
+    border: 2px solid #009AD8;
+    color: #009AD8;
+}
+
+.navbar .nav-item .nav-link.active{
+    padding: 0 25px;
+    margin: 0 10px;
+    color: #009AD8;
+    border: 2px solid #009AD8;
+    border-radius: 30px;
+    font-weight: 400;
+}
+
+
+
+/* !============== */
+
+.home{
+    background-image:linear-gradient(#00000083,#00000083), url(../images/weather2.png) ;
+    background-position: center center;
+    background-size:cover ;
+    padding-top:40px ;
+    
+}
+
+
+.form{
+    position: relative;
+}
+
+#BtnSearch{
+    position: absolute;
+    top: 10px;
+    right: 14%;
+}
+
+.form-control{
+   border-radius: 30px;
+   background-color: #ccc;
+}
+
+.form-control:focus {
+    box-shadow:none;
+    background-color: #ccc;
+}
+/* !================ */
+
+
+.card{
+    border-color: #323544;
+}
+
+
+.card-body{
+    background-color: #323544;
+    color: #fff;
+  
+}
+
+.card-footer{
+    background-color: #2D303D;
+    color: #fff;
+    border: none;
+}
+
+.space{
+    padding: 5px 0;
+}
+
+.diffrence{
+    background-color: #262936;
+}
+
+/* !============== */
+
+
+.foatear{
+    background-color:#262936 ;
+}
+.foatear p{
+    color: #fff;
+}
+
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.icon span{
+    margin:  10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #000;
+    color: #009AD8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+}
+
+.icon span:hover{
+    background-color: #009AD8;
+    color: #fff;
+    cursor: pointer;
+}
+
+.mo{
+    position: relative;
+}
+
+#Subscribe{
+    position: absolute;
+    top: 10px;
+    right: 2%;
+}
+
+/* .subs{
+  position: relative;
+}
+
+
+#BtnSub{
+    position: absolute;
+    top: 30px;
+    right: 27%;
+} */
